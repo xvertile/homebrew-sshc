@@ -11,7 +11,7 @@ class Sshc < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/xvertile/sshc/releases/download/v1.0.1/sshc_1.0.1_darwin_amd64.tar.gz"
-      sha256 "cb19d8b08e3b4032ca2457e749aa199b896ac742dfa77e9aefb6963384eadd36"
+      sha256 "e8499be98cb510a4659796d52207540e7960fa66f4c45044bcde964937f8d417"
 
       def install
         bin.install "sshc"
@@ -19,7 +19,7 @@ class Sshc < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/xvertile/sshc/releases/download/v1.0.1/sshc_1.0.1_darwin_arm64.tar.gz"
-      sha256 "0e3b07a52f7b5cc70f5b34a6a68b91c1e41a8257df8a91ad307946a398d51783"
+      sha256 "5dff8e8602eacb744a698f7b283d7368860306b6823e3a9a17f0498856841f14"
 
       def install
         bin.install "sshc"
@@ -30,14 +30,14 @@ class Sshc < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/xvertile/sshc/releases/download/v1.0.1/sshc_1.0.1_linux_amd64.tar.gz"
-      sha256 "5feee5acad22055a41542d4a792621c4a0d15a43e0a5c6a46f7d58fa325990da"
+      sha256 "70ee2e77e4eb506bed9589f9b7db03b6ef7aa56a1596c71a013892f3dbc6ff13"
       def install
         bin.install "sshc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/xvertile/sshc/releases/download/v1.0.1/sshc_1.0.1_linux_arm64.tar.gz"
-      sha256 "db6c4eecc225744f7bceac398a98818f2ccb1d4a64aec96c20c9884d28bf0305"
+      sha256 "f66042dd64f3425bc54e6962cef0eca3e01aa3f55ffa931c4fab8ee74e9ef3a1"
       def install
         bin.install "sshc"
       end

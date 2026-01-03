@@ -5,21 +5,21 @@
 class Sshc < Formula
   desc "A powerful SSH client for the terminal"
   homepage "https://github.com/xvertile/sshc"
-  version "1.0.23"
+  version "1.0.24"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/xvertile/sshc/releases/download/v1.0.23/sshc_1.0.23_darwin_amd64.tar.gz"
-      sha256 "777bf097dff432efa1e5ed5c649750231cfe5153d28aba4beb1321086a71dbcd"
+      url "https://github.com/xvertile/sshc/releases/download/v1.0.24/sshc_1.0.24_darwin_amd64.tar.gz"
+      sha256 "07f9c5c4762bb03c3499797dc95473f70d69211b16aa9d3358f0018e1482a05e"
 
       def install
         bin.install "sshc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/xvertile/sshc/releases/download/v1.0.23/sshc_1.0.23_darwin_arm64.tar.gz"
-      sha256 "c00c8dc312ef4a85a70237a4ce9ba1903b6ab53e89d7203ff20f76b369cde43f"
+      url "https://github.com/xvertile/sshc/releases/download/v1.0.24/sshc_1.0.24_darwin_arm64.tar.gz"
+      sha256 "741d7ecd5ae2c6929745e749473f97e41fa7493e04d3e160b13e3a718e4dd853"
 
       def install
         bin.install "sshc"
@@ -29,15 +29,15 @@ class Sshc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xvertile/sshc/releases/download/v1.0.23/sshc_1.0.23_linux_amd64.tar.gz"
-      sha256 "45441ec3b2f6df17e8964c40856a086d014bb43901c4ac175bc341ed2dda9535"
+      url "https://github.com/xvertile/sshc/releases/download/v1.0.24/sshc_1.0.24_linux_amd64.tar.gz"
+      sha256 "2c2f719eff46581a9975b61b034a936e87b5247ce1e17a564bf910ed424f5283"
       def install
         bin.install "sshc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xvertile/sshc/releases/download/v1.0.23/sshc_1.0.23_linux_arm64.tar.gz"
-      sha256 "a4f06b7ddba42623f28bfa5e64058da38d388bab270f6f56efe4c1344870064a"
+      url "https://github.com/xvertile/sshc/releases/download/v1.0.24/sshc_1.0.24_linux_arm64.tar.gz"
+      sha256 "1d0fff853e2f0dea70bb7f4ffb71574d6c3fb3f43c3de417c7230179f144e125"
       def install
         bin.install "sshc"
       end

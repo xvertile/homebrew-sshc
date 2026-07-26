@@ -5,21 +5,21 @@
 class Sshc < Formula
   desc "A powerful SSH client for the terminal"
   homepage "https://github.com/xvertile/sshc"
-  version "1.0.33"
+  version "1.0.34"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/xvertile/sshc/releases/download/v1.0.33/sshc_1.0.33_darwin_amd64.tar.gz"
-      sha256 "338482c926bccb86bc2181453d898bf5718f99b65c644ec5bd3bcd01e3751b77"
+      url "https://github.com/xvertile/sshc/releases/download/v1.0.34/sshc_1.0.34_darwin_amd64.tar.gz"
+      sha256 "97e016464c351e1e20e39350c79b283855ea60c0b343c6703e8eb20245776c25"
 
       define_method(:install) do
         bin.install "sshc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/xvertile/sshc/releases/download/v1.0.33/sshc_1.0.33_darwin_arm64.tar.gz"
-      sha256 "655403245f2ef4e3015db91eccec7d9bc47262b79c80dde914d699a4920c5d5c"
+      url "https://github.com/xvertile/sshc/releases/download/v1.0.34/sshc_1.0.34_darwin_arm64.tar.gz"
+      sha256 "946f9ca15f22af1c3920e2ed28c33722e8801f44e2084a2bd8406db734ce8c86"
 
       define_method(:install) do
         bin.install "sshc"
@@ -29,15 +29,15 @@ class Sshc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xvertile/sshc/releases/download/v1.0.33/sshc_1.0.33_linux_amd64.tar.gz"
-      sha256 "0967f6df2e34ccb11bbe06d568bc3dd96ab54c967582329d235fdc536f018586"
+      url "https://github.com/xvertile/sshc/releases/download/v1.0.34/sshc_1.0.34_linux_amd64.tar.gz"
+      sha256 "cfffea750c3568b82537852a503ce2ff513be8f5003c1b7c757af1c5ed793868"
       define_method(:install) do
         bin.install "sshc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xvertile/sshc/releases/download/v1.0.33/sshc_1.0.33_linux_arm64.tar.gz"
-      sha256 "d6f9598cc281198cc7921e1f76540d3a218cafc503957d6c009106aa173a3b06"
+      url "https://github.com/xvertile/sshc/releases/download/v1.0.34/sshc_1.0.34_linux_arm64.tar.gz"
+      sha256 "fb95737bf5b6d562b2a289b2128730732e879711a48e6ce98ef2a6f8a2ea2861"
       define_method(:install) do
         bin.install "sshc"
       end

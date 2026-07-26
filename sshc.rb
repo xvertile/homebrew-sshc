@@ -5,23 +5,23 @@
 class Sshc < Formula
   desc "A powerful SSH client for the terminal"
   homepage "https://github.com/xvertile/sshc"
-  version "1.0.32"
+  version "1.0.33"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/xvertile/sshc/releases/download/v1.0.32/sshc_1.0.32_darwin_amd64.tar.gz"
-      sha256 "36827585dab78d73432f82afc33aa1872618078b91be3acc8797699896bf89c9"
+      url "https://github.com/xvertile/sshc/releases/download/v1.0.33/sshc_1.0.33_darwin_amd64.tar.gz"
+      sha256 "338482c926bccb86bc2181453d898bf5718f99b65c644ec5bd3bcd01e3751b77"
 
-      def install
+      define_method(:install) do
         bin.install "sshc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/xvertile/sshc/releases/download/v1.0.32/sshc_1.0.32_darwin_arm64.tar.gz"
-      sha256 "7ad0b78322df32a0f753aee65587a71a7da83e3c097e60d5a708178a0ee539f6"
+      url "https://github.com/xvertile/sshc/releases/download/v1.0.33/sshc_1.0.33_darwin_arm64.tar.gz"
+      sha256 "655403245f2ef4e3015db91eccec7d9bc47262b79c80dde914d699a4920c5d5c"
 
-      def install
+      define_method(:install) do
         bin.install "sshc"
       end
     end
@@ -29,16 +29,16 @@ class Sshc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xvertile/sshc/releases/download/v1.0.32/sshc_1.0.32_linux_amd64.tar.gz"
-      sha256 "9d4b9e4a9f716444fd1f0a0dd80fc14784f16f4d45db470a85c3bc9342d7f965"
-      def install
+      url "https://github.com/xvertile/sshc/releases/download/v1.0.33/sshc_1.0.33_linux_amd64.tar.gz"
+      sha256 "0967f6df2e34ccb11bbe06d568bc3dd96ab54c967582329d235fdc536f018586"
+      define_method(:install) do
         bin.install "sshc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xvertile/sshc/releases/download/v1.0.32/sshc_1.0.32_linux_arm64.tar.gz"
-      sha256 "1cad10eb4b2203093cadb5a1a971d5ec367202048828ce3ddce7980f86fcd2ae"
-      def install
+      url "https://github.com/xvertile/sshc/releases/download/v1.0.33/sshc_1.0.33_linux_arm64.tar.gz"
+      sha256 "d6f9598cc281198cc7921e1f76540d3a218cafc503957d6c009106aa173a3b06"
+      define_method(:install) do
         bin.install "sshc"
       end
     end
